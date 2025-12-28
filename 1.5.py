@@ -18,7 +18,7 @@ for user in users_before:
 print("\nУдаляем пользователя 'Иван'...")
 cursor.execute("DELETE FROM users WHERE name = ?", ('Иван',))
 conn.commit()
-print("✅ Запись удалена.")
+print("Запись удалена.")
 
 print("\n=== ДАННЫЕ ПОСЛЕ УДАЛЕНИЯ ===")
 cursor.execute("SELECT * FROM users")
