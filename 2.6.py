@@ -2,7 +2,6 @@ import psycopg2
 from psycopg2 import errors, sql
 
 def create_database_if_not_exists():
-    """Создает базу данных 'laba7_db' если она не существует"""
     try:
         conn = psycopg2.connect(
             dbname="postgres",
