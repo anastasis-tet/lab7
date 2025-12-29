@@ -4,7 +4,6 @@ import time
 cache = {}
 
 def simple_cache(query):
-    """Самый простой кэш без TTL"""
     if query in cache:
         print(f"Берем из КЭША: {query}")
         return cache[query]
